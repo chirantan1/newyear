@@ -1,123 +1,95 @@
-
-body{
-    background-color: aquamarine;
-    
-}
-h1{
-    text-align: center;
-    color:rgba(150,50,200,1);
-    
-}
-div{
-    height:650px;
-    width: 1400px;
-    border: 2px solid black;
-    margin: 25px;
-    margin-left: 45px;
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #001f3f;
+    color: #ffffff;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    font-size: 100px;
+    justify-content: center;
+    min-height: 100vh;
     background-image: url("backgroundImage.jpg");
     background-size: cover;
-    color:rgb(201, 17, 78)
-
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-#one{
-    height: 5px;
-    width:5px;
-    color:rgb(115, 220, 10);
- 
+
+/* Header Styles */
+header h1 {
+    font-size: 3rem;
+    color: #ffcc00;
+    text-shadow: 2px 2px 5px #000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Main Section Styles */
+#box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    color: #ffcc00;
+    text-align: center;
+}
+
+.main-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.sub-text {
+    font-size: 1.5rem;
+    color: #00ff7f;
+    text-shadow: 1px 1px 5px #000;
+    margin: 10px 0;
+}
+
+/* Animated Circles */
+.year-circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 10px;
     position: absolute;
-    bottom:80px;
-    left: 200px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size:40px ;
-    
-    transition: all 6s ease-in;
-    
+    background: linear-gradient(135deg, #ff4500, #ffcc00);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    animation: pulse 1s infinite alternate;
 }
-#one:active{
-    transform: translate(900px,-500px);
 
-
+/* Specific Circle Positions */
+#box1 {
+    top: 20px;
+    left: 50px;
+    position: absolute;
 }
-#two{
-    height: 5px;
-    width:5px;
-    font-family:inherit;
-    position:absolute;
-    top:200px;
-    left: 500px;
-    font-size: 70px;
-    color:gold;
-    transition-property: all ;
-    transition-duration: 6s;
-    transition-timing-function: ease-in;
-    transition-delay: 0s;
-    transform: rotate(350deg);
 
+#box2 {
+    top: 20px;
+    right: 50px;
+    position: absolute;
 }
-#box1{
-    height: 60px;
-    width: 60px;
-    background-color:forestgreen;
-    color:black;
-    border: none;
-    border-radius: 50%;
-    position:absolute;
-    top:0px;
-    left:450px;
-    font-size: 20px;
-    background-image: none;
-    animation-name: colorAnimate;
-    animation-duration: 0.5s;
-    animation-delay: 0s;
-    animation-iteration-count: 70;
 
-}
-@keyframes colorAnimate{
-    from{
-        background-color: forestgreen;
-        color:black;
-        font-size: 20px;
+/* Animations */
+@keyframes pulse {
+    from {
+        transform: scale(1);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     }
-    to{
-        background-color: red;
-        color:white;
-        font-size:40px ;
+    to {
+        transform: scale(1.2);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
     }
 }
-#box2{
-    height: 60px;
-    width: 60px;
-    border: none;
-    color:black;
-    background-color:blueviolet;
-    border-radius: 50%;
-    position:absolute;
-    top:0px;
-    right:450px;
-    font-size: 20px;
-    background-image: none;
-    animation-name: color;
-    animation-duration: 0.5s;
-    animation-delay: 0s;
-    animation-iteration-count: 70;
-
-}
-@keyframes color{
-    from{
-        background-color: blueviolet;
-        font-size: 20px;
-        color:black;
-        
-    }
-    to{
-        background-color: red;
-        color:white;
-        font-size:40px ;
-    }
-}
-
-
