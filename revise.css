@@ -1,0 +1,123 @@
+
+body{
+    background-color: aquamarine;
+    
+}
+h1{
+    text-align: center;
+    color:rgba(150,50,200,1);
+    
+}
+div{
+    height:650px;
+    width: 1400px;
+    border: 2px solid black;
+    margin: 25px;
+    margin-left: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    background-image: url("backgroundImage.jpg");
+    background-size: cover;
+    color:rgb(201, 17, 78)
+
+}
+#one{
+    height: 5px;
+    width:5px;
+    color:rgb(115, 220, 10);
+ 
+    position: absolute;
+    bottom:80px;
+    left: 200px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:40px ;
+    
+    transition: all 6s ease-in;
+    
+}
+#one:active{
+    transform: translate(900px,-500px);
+
+
+}
+#two{
+    height: 5px;
+    width:5px;
+    font-family:inherit;
+    position:absolute;
+    top:200px;
+    left: 500px;
+    font-size: 70px;
+    color:gold;
+    transition-property: all ;
+    transition-duration: 6s;
+    transition-timing-function: ease-in;
+    transition-delay: 0s;
+    transform: rotate(350deg);
+
+}
+#box1{
+    height: 60px;
+    width: 60px;
+    background-color:forestgreen;
+    color:black;
+    border: none;
+    border-radius: 50%;
+    position:absolute;
+    top:0px;
+    left:450px;
+    font-size: 20px;
+    background-image: none;
+    animation-name: colorAnimate;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-iteration-count: 70;
+
+}
+@keyframes colorAnimate{
+    from{
+        background-color: forestgreen;
+        color:black;
+        font-size: 20px;
+    }
+    to{
+        background-color: red;
+        color:white;
+        font-size:40px ;
+    }
+}
+#box2{
+    height: 60px;
+    width: 60px;
+    border: none;
+    color:black;
+    background-color:blueviolet;
+    border-radius: 50%;
+    position:absolute;
+    top:0px;
+    right:450px;
+    font-size: 20px;
+    background-image: none;
+    animation-name: color;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-iteration-count: 70;
+
+}
+@keyframes color{
+    from{
+        background-color: blueviolet;
+        font-size: 20px;
+        color:black;
+        
+    }
+    to{
+        background-color: red;
+        color:white;
+        font-size:40px ;
+    }
+}
+
+
